@@ -1,23 +1,29 @@
-//import Image from "next/image";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <div className="font-bold">
-          Jules Wellner
-        </div>
-        <ul className="list-inside list-disc text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Foo
-          </li>
-          <li>Bar</li>
-        </ul>
+    <div className="relative h-screen w-screen bg-black flex flex-col items-center">
 
+      {/* Full-Size Image Aligned to the Top */}
+      <div className="relative w-full h-full min-w-full">
+        <Image
+          src="/jules-portrait.jpg"
+          alt="Full-size hero background"
+          layout="fill"
+          objectFit="cover" // Ensures the entire image is visible without cropping
+          quality={100}
+          priority={true}
+          className="absolute top-0 left-0"
+        />
+      </div>
 
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-      </footer>
+      {/* Overlay Content (Optional) 
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
+        <h1 className="text-5xl font-bold">Welcome to My Website</h1>
+        <p className="text-lg mt-4">This is the home page with a full-size image.</p>
+      </div>
+      */}
     </div>
+
   );
 }

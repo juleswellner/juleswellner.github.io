@@ -26,13 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <title>Jules Wellner</title>
-      </head>
 
       <body>
         {/* Menu Bar */}
-        <nav className="bg-gray-800 p-4 flex justify-between items-center">
+        <nav className="bg-gray-700 p-4 flex justify-between items-center overflow-x-hidden">
           <div className="text-white text-lg font-bold">
             <Link href="/">Jules Wellner</Link>
           </div>
@@ -50,12 +47,12 @@ export default function RootLayout({
               </Link>
             </li>            <li>
               <Link href="/home-restoration" className="text-white hover:text-gray-300">
-                Home Restoration
+                Home restoration
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="text-white hover:text-gray-300">
-                Contact
+              <Link href="/about" className="text-white hover:text-gray-300">
+                About
               </Link>
             </li>
           </ul>
@@ -67,6 +64,7 @@ export default function RootLayout({
           {children}
         </main>
       </body>
+
     </html>
   );
 }
