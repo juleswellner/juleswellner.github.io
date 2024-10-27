@@ -36,27 +36,27 @@ export default function RootLayout({
 
         {/* Menu Bar */}
         <nav className="fixed top-0 left-0 w-full bg-gray-800/40 text-white py-2">
-          <div className=" text-2xl font-bold">
+          <div className=" text-2xl font-bold hover:underline">
             <Link href="/">Jules Wellner</Link>
           </div>
-          <ul className="flex space-x-6 pt-3 justify-end underline hover:text-gray-300">
+          <ul className="flex space-x-6 pt-3 justify-end">
             <li>
-              <Link href="/sculpture">
+              <Link href="/sculpture" className="hover:underline">
                 Sculpture
               </Link>
             </li>
             <li>
-              <Link href="/pottery" >
+              <Link href="/pottery" className="hover:underline">
                 Pottery
               </Link>
             </li>
             <li>
-              <Link href="/tile" >
+              <Link href="/tile" className="hover:underline">
                 Tile
               </Link>
             </li>
             <li>
-              <Link href="/about" >
+              <Link href="/about" className="hover:underline">
                 About
               </Link>
             </li>
