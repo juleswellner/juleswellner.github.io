@@ -1,20 +1,31 @@
 //import Image from "next/image";
+import PhotoGallery from '../../components/photo-gallery'
+
+const photos: string[] = [
+  '/IMG_0020.jpg',
+  '/IMG_00256.jpg',
+  '/IMG_0222.jpg',
+  '/IMG_0226.jpg',
+  '/IMG_0229.jpg',
+  '/IMG_0236.jpg',
+  '/IMG_8012.jpg',
+  '/IMG_8025.jpg',
+  '/IMG_8032.jpg',
+  '/IMG_80862.jpg',
+  '/IMG_8090.jpg',
+];
+
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <div className="font-bold">
-          Sculpture
-        </div>
-        <div>
-          This is the sculpture page
-        </div>
-
-
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-      </footer>
+    <div className=" items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 bg-black font-[family-name:var(--font-geist-sans)]">
+      <div className="py-14 text-white font-bold">
+        Sculpture
+      </div>
+      <div className="flex gap-4 justify-center">
+        <PhotoGallery photos={photos} />
+      </div>
     </div>
   );
 }

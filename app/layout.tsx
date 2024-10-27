@@ -26,46 +26,56 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-
       <body>
-        {/* Menu Bar */}
-        <nav className="bg-gray-700 p-4 flex justify-between items-center overflow-x-hidden">
-          <div className="text-white text-lg font-bold">
-            <Link href="/">Jules Wellner</Link>
-          </div>
-
-          {/* Links on the right */}
-          <ul className="flex space-x-8">
-            <li>
-              <Link href="/sculpture" className="text-white hover:text-gray-300">
-                Sculpture
-              </Link>
-            </li>
-            <li>
-              <Link href="/pottery" className="text-white hover:text-gray-300">
-                Pottery
-              </Link>
-            </li>            <li>
-              <Link href="/home-restoration" className="text-white hover:text-gray-300">
-                Home restoration
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="text-white hover:text-gray-300">
-                About
-              </Link>
-            </li>
-          </ul>
-
-        </nav>
 
         {/* Page Content */}
         <main className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
           {children}
         </main>
-      </body>
 
-    </html>
+
+        {/* Menu Bar */}
+        <nav className="fixed top-0 left-0 w-full bg-gray-800/40 text-white py-2">
+          <div className=" text-2xl font-bold">
+            <Link href="/">Jules Wellner</Link>
+          </div>
+          <ul className="flex space-x-6 pt-3 justify-end underline hover:text-gray-300">
+            <li>
+              <Link href="/sculpture">
+                Sculpture
+              </Link>
+            </li>
+            <li>
+              <Link href="/pottery" >
+                Pottery
+              </Link>
+            </li>
+            <li>
+              <Link href="/tile" >
+                Tile
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" >
+                About
+              </Link>
+            </li>
+            <span></span>
+          </ul>
+        </nav>
+
+        {/* Overlay Content
+        <div className="absolute inset-0 flex flex-col items-center justify-center ">
+          <h1 className="text-5xl font-bold">Welcome to My Website</h1>
+          <p className="text-lg mt-4">This is the home page with a full-size image.</p>
+        </div>
+      }
+*/}
+
+
+
+      </body>
+    </html >
   );
 }
 
