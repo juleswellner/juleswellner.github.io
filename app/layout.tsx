@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Jules Wellner",
-  description: "Sculpture, Ceramics, Home Restoration",
+  description: "Sculpture, Ceramics, Tile installation",
 };
 
 export default function RootLayout({
@@ -36,12 +36,12 @@ export default function RootLayout({
 
         {/* Menu Bar */}
         <nav className="fixed top-0 left-0 w-full bg-gray-800/40 text-white py-2">
-          <div className=" text-2xl font-bold mx-4 hover:underline">
-            <Link href="/">&nbsp;Jules Wellner</Link>
+          <div className=" text-2xl font-bold mx-4">
+            <Link href="/">&nbsp; Jules Wellner </Link>
           </div>
           <ul className="flex space-x-6 pt-3 justify-end">
             <li>
-              <Link href="/sculpture" className="hover:underline">
+              <Link href="/" className="hover:underline">
                 Sculpture
               </Link>
             </li>
@@ -63,16 +63,6 @@ export default function RootLayout({
             <span></span>
           </ul>
         </nav>
-
-        {/* Overlay Content
-        <div className="absolute inset-0 flex flex-col items-center justify-center ">
-          <h1 className="text-5xl font-bold">Welcome to My Website</h1>
-          <p className="text-lg mt-4">This is the home page with a full-size image.</p>
-        </div>
-      }
-*/}
-
-
 
       </body>
     </html >
