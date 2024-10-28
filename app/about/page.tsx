@@ -22,10 +22,11 @@ export default function Home() {
 
         {/* Overlay */}
         <div className="absolute inset-0 grid grid-rows-[20px_1fr_20px] items-end justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-          <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start text-white  bg-gray-900/25 p-10">
+          <div className="flex flex-col gap-3 row-start-2 items-center sm:items-start text-white bg-gray-900/25 p-10">
             <div>
               Jules Wellner is a traditional sculptor based in Syracuse, New York.
-              <br />He works primarily with ceramics and is a student of <Link href="https://philippefaraut.com/" className="underline">Philippe Faraut</Link>
+              <br />He works primarily with ceramics and is a student of
+              <Link href="https://philippefaraut.com/" className="underline">Philippe Faraut</Link>.
             </div>
             <div>
               For information about commissioned portraits or other work:

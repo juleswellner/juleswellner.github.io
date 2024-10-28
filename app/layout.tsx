@@ -3,6 +3,7 @@ import Link from 'next/link';
 import localFont from "next/font/local";
 import "./globals.css";
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -24,6 +25,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body className="bg-black text-white">
@@ -33,6 +35,9 @@ export default function RootLayout({
           {children}
         </main>
 
+        <footer className="gap-6 text-center text-gray-500 inset-x-0">
+          Copyright Jules Wellner &copy;2024
+        </footer>
 
         {/* Menu Bar */}
         <nav className="fixed top-0 left-0 w-full bg-gray-800/40 text-white py-2">
