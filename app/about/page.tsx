@@ -9,15 +9,14 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <div>
           Jules Wellner is a traditional sculptor based in Syracuse, New York.
-          <br/>He works primarily with ceramics, and is a student of <Link href="https://philippefaraut.com/" className="underline">Philippe Faraut</Link>
+          <br />He works primarily with ceramics and is a student of <Link href="https://philippefaraut.com/" className="underline">Philippe Faraut</Link>
         </div>
         <div>
-          For information about commissioned portraits or other work contact:
+          Contact for information about commissioned portraits or other work:
         </div>
         <div>
           Call or text: <span className="font-bold">315 308-1239</span>
-        </div>
-        <div>
+          <br />
           Email: <span className="font-bold">jules@wellners.net</span>
         </div>
 
