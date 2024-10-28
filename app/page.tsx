@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    (<div className="relative h-screen w-screen bg-black flex flex-col items-center">
+    (<div className="relative h-screen w-screen flex flex-col items-center">
       {/* Full-Size Image Aligned to the Top */}
       <div className="relative w-full h-full min-w-full">
         <Image

@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-black text-white">
 
         {/* Page Content */}
         <main className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
@@ -36,8 +36,8 @@ export default function RootLayout({
 
         {/* Menu Bar */}
         <nav className="fixed top-0 left-0 w-full bg-gray-800/40 text-white py-2">
-          <div className=" text-2xl font-bold hover:underline">
-            <Link href="/">Jules Wellner</Link>
+          <div className=" text-2xl font-bold mx-4 hover:underline">
+            <Link href="/">&nbsp;Jules Wellner</Link>
           </div>
           <ul className="flex space-x-6 pt-3 justify-end">
             <li>
