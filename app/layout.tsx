@@ -40,7 +40,7 @@ export default function RootLayout({
         </footer>
 
         {/* Menu Bar */}
-        <nav className="fixed top-0 left-0 w-full bg-gray-800/40 text-white py-2">
+        <nav className="fixed top-0 left-0 w-full bg-gray-800/50 text-white py-2">
           <div className=" text-2xl font-bold mx-4">
             <Link href="/">&nbsp; Jules Wellner </Link>
           </div>
