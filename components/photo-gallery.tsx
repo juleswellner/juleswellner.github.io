@@ -7,7 +7,7 @@ interface PhotoGalleryProps {
 
 const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos }) => {
   return (
-    <div className="h-screen">
+    <div className="min-h-screen">
       {photos.map((photo, index) => (
         <img
           className="object-scale-down max-h-full m-auto object-cover mb-5"

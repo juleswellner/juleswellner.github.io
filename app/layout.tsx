@@ -31,11 +31,11 @@ export default function RootLayout({
       <body className="bg-black text-white">
 
         {/* Page Content */}
-        <main className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
+        <main className={`flex-grow ${geistSans.variable} ${geistMono.variable} antialiased`} >
           {children}
         </main>
 
-        <footer className="gap-6 text-center text-gray-500 inset-x-0">
+        <footer className="gap-6 text-center text-gray-500">
           Copyright Jules Wellner &copy;2024
         </footer>
 
