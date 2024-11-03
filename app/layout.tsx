@@ -36,7 +36,7 @@ export default function RootLayout({
         </main>
 
         <footer className="gap-6 text-center text-gray-500">
-          Copyright Jules Wellner &copy;2024
+        &copy; Jules Wellner 2024
         </footer>
 
         {/* Menu Bar */}
