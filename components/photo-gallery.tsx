@@ -10,7 +10,7 @@ const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos }) => {
     <div className="min-h-screen">
       {photos.map((photo, index) => (
         <img
-          className="object-scale-down max-h-full m-auto object-cover mb-5"
+          className="object-scale-down max-h-full m-auto object-cover mb-5 max-h-screen"
           key={index}
           src={photo}
           alt={`Gallery image ${index + 1}`}
