@@ -37,7 +37,7 @@ export default function RootLayout({
         </main>
 
         <footer className="gap-6 text-center text-gray-500">
-        &copy; Jules Wellner 2024
+          &copy; Jules Wellner 2024, 2025
         </footer>
 
         {/* Menu Bar */}
